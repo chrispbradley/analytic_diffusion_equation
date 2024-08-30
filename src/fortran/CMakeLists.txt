@@ -1,0 +1,5 @@
+add_executable(analytic_diffusion_fortran analytic_diffusion_equation.F90)
+
+target_link_libraries(analytic_diffusion_fortran PRIVATE OpenCMISS::libOpenCMISS_Fortran)
+
+install(TARGETS analytic_diffusion_fortran DESTINATION bin)
